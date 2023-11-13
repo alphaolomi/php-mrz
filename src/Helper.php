@@ -4,7 +4,7 @@ namespace Alphaolomi\Mrz;
 
 /**
  * class Helper
- * 
+ *
  * @author Evandro Kondrat
  * @package Alphaolomi\Mrz
  */
@@ -12,7 +12,12 @@ class Helper
 {
     static function retiraAcentuacao(string $string)
     {
-        return strtr(utf8_decode($string), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+
+        return strtr(
+            mb_convert_encoding($string, 'UTF-8', 'UTF-8'),
+            mb_convert_encoding('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ', 'UTF-8', 'UTF-8'),
+            'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY'
+        );
     }
 
     static function transliterate(string $string)

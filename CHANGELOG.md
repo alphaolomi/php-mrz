@@ -16,12 +16,16 @@ All notable changes to `alphalomi/mrz` will be documented in this file.
 ### Added
 
 - Add `MrzParser` class 
-- Add FUNDING.yml
-- Add Testing GH Action
+- GitHub Sponsors support via `FUNDING.yml`.
+- Comprehensive testing setup using GitHub Actions for PHP 8.1 and 8.2 across Ubuntu and Windows.
 
 ### Changed
-- Improve README.md docs
-- Skip Accent Dialectic characters tests
+- Minor documentation( in README.md) improvements for better clarity.
+- Skipping Accent Dialectic characters functuonality.
+- Updated `.gitignore` to exclude additional files (`*.cache`, `composer.lock`, etc.) for cleaner repository management.
+
+### Notes
+- This release focuses on project sustainability and quality assurance enhancements.
 
 ## [1.0.1] - 2023-11-13
 

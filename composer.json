@@ -2,20 +2,19 @@
     "name": "alphaolomi/mrz",
     "type": "library",
     "description": "Machine Readable Zone SDK for PHP",
-    "keywords": ["mrz"],    
+    "keywords": ["mrz"],
     "license": "MIT",
     "authors": [
-        {
-            "name": "Evandro Kondrat",
-            "email": "evandrok@gmail.com",
-            "homepage": "https://github.com/mreko",
-            "role": "Author"
-        },
         {
             "name": "Alpha Olomi",
             "email": "alphaolomi@gmail.com",
             "homepage": "https://github.com/alphaolomi",
             "role": "Maintainer"
+        },
+        {
+            "name": "Nascent Michael",
+            "homepage": "https://github.com/nascent1",
+            "role": "Author"
         }
     ],
     "require": {
@@ -35,7 +34,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit tests"
+        "test": "./vendor/bin/phpunit"
     },
     "extra": {
         "branch-alias": {

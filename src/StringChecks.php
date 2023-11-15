@@ -6,9 +6,11 @@ use Alphaolomi\Mrz\Helper;
 
 /**
  * Trait StringChecks
- * 
- * @author Evandro Kondrat
+ *
  * @package Alphaolomi\Mrz
+ * @version 1.0.0
+ *
+ * @author Evandro Kondrat
  */
 trait StringChecks
 {

@@ -5,7 +5,7 @@ namespace AlphaOlomi\Mrz;
 use Exception;
 
 /**
- * Class MrzParser
+ * Parse MRZ (Machine Readable Zone) from Passport, Visa or ID-1
  *
  * @package AlphaOlomi\Mrz*
  * @version 1.0.0

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Alphaolomi\Mrz;
 
 /**
- * Class Mrz
+ * Write MRZ code for TD1 format
  *
  * @package Alphaolomi\Mrz
  * @version 1.0.0
@@ -57,6 +57,9 @@ class Mrz
         $this->handleBiggerDocumentNumbers();
     }
 
+    /**
+     * Generate TD1 code
+     */
     public function TD1CodeGenerator(): string
     {
         return $this->line1() . PHP_EOL . $this->line2() . PHP_EOL . $this->line3();

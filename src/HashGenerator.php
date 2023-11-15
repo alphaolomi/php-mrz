@@ -6,12 +6,13 @@ namespace Alphaolomi\Mrz;
  * Trait HashGenerator
  *
  * @package Alphaolomi\Mrz
+ * @version 1.0.0
  */
 trait HashGenerator
 {
     /**
      * Generates a hash for the document number.
-     * 
+     *
      * Returns a hash string if the document number is to be hashed,
      * otherwise returns a placeholder character.
      *
@@ -24,7 +25,7 @@ trait HashGenerator
 
     /**
      * Generates a hash for the birth date.
-     * 
+     *
      * @return string The hash string for the birth date.
      */
     public function birth_date_hash(): string
@@ -34,7 +35,7 @@ trait HashGenerator
 
     /**
      * Generates a hash for the expiry date.
-     * 
+     *
      * @return string The hash string for the expiry date.
      */
     public function expiry_date_hash(): string

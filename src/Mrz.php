@@ -8,6 +8,8 @@ namespace Alphaolomi\Mrz;
  * Class Mrz
  *
  * @package Alphaolomi\Mrz
+ * @version 1.0.0
+ * @see https://en.wikipedia.org/wiki/Machine-readable_passport
  */
 class Mrz
 {
